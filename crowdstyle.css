@@ -1,0 +1,771 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(243, 242, 242);
+    transition: all 0.3s;
+}
+/* Header top */
+.headerone{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.109);
+    font-size: 12px;  
+    padding: 7px 0;
+}
+.headerone a{
+    text-decoration: none;
+    color: rgb(110, 110, 110);  
+}
+.headerone i{
+    color: rgb(255, 111, 0);
+}
+.contact a , .logindetails a {
+
+ padding: 0 20px;
+}
+.logindetails i{
+    padding: 0 5px; 
+}
+.logindetails{
+    margin-right: 18px;
+}
+@media only screen and (max-width: 750px)  {
+    .headerone{
+        display: none;
+    }
+}
+
+
+/*%%%%%%%%%%%%%%%%%% Nav  Bar%%%%%%%%%%%%% */
+
+.Navibar{
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+   
+}
+
+/*&&&&& ANIMATIONS **&&&&&&&&&&*/
+@keyframes zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05, 1.05);
+    }
+}
+
+@keyframes Fadeleft {
+    from{
+        opacity:0;
+        transform: translateY(-50px) scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+    
+}
+@keyframes Fadebottom {
+    from{
+        opacity:0;
+        transform: translateY(40px) scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+    
+}
+
+/* &&&&&&&&& Hero Section &&&&&&&&&&*/
+
+.img-caps h6{
+    animation: Fadeleft  1s;
+    margin: 10px 0;
+    color: white;
+}
+.img-caps h1{
+    animation: Fadeleft  4s;
+    margin-bottom: 20px;
+    color: white;
+   
+}
+.img-caps{
+    
+    top: 110px;
+    text-align: left;
+    
+}
+.c-active{
+    animation: zoom 10s;
+    background-blend-mode: multiply
+   
+}
+
+.divoverlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 15,0, 0.4);
+}
+
+.btn-left, .btn-right{
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 5px 8px;
+    animation: Fadebottom 2s;
+    text-align: center;
+}
+.btn-right{
+   
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+}
+.txxt{
+    padding: 10px;
+}
+.txxt h6{
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 15px;
+}
+
+/* &&&&&&&&& Category Section ****&&&&&&&*/
+.card1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    width: 150px;
+    transition: all 0.5s ease-in;
+    
+}
+.card1 h5{
+    font-size: 13px;
+}
+
+.card1:hover{
+    background-color: white;
+    scale: 1;
+    color: rgb(20, 20, 20);
+    letter-spacing: 1px;   
+}
+.icon{
+    font-size: 35px;
+    color: rgb(255, 129, 50);
+}
+.img-area{
+    width: 100%;
+    overflow: hidden;
+    height: 190px;
+    border-radius: 8px;
+    
+}
+.single-box{
+    border-radius: 8px;
+    box-shadow: rgba(0, 4 , 0, 0.14) 1px 2px 7px;
+}
+.img-area img{
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+}
+.img-area img:hover{
+    width: 105%;
+}
+.overlay{
+    background-color: black;
+}
+
+.img-txt{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+.img-txt h6{
+    font-size: 10px;
+}
+.img-txt i{
+    padding: 0 5px;
+}
+.img-txt button{
+    margin: 15px auto;
+    width: 80px;
+    height: auto;
+    background-color: rgb(255, 129, 50);
+    font-size: 10px;
+    color: white;
+    border: none;
+}
+.img-progress{
+    font-size: 13px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-progress h6{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.img-goals{
+    padding: 0 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Qrowd Platform   */
+.platform1{
+   
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 65px;
+}
+.text-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.success{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(130, 130, 130);
+}
+.text-3 li{
+    list-style: none;
+}
+
+.text-3 i{
+    color: green;
+    font-size: 27px;
+    margin-bottom: 17px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+.text-3:hover .success i {
+    color: white;
+    background-color: rgb(255, 129, 50) ;
+    width: 50px;
+    height: 50px;
+}
+.text-1 h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 35px 0;
+}
+.text-1 h6{
+    margin-bottom: ;
+    color:rgb(255, 129, 50) ;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 13px;
+}
+.text-2 p{
+    color: rgb(94, 94, 94);
+}
+.btn-platform button{
+    margin-top: 25px;
+    padding: 15px 37px;
+    border: none;
+    background-color:rgb(255, 129, 50) ;
+    color: white;
+   
+}
+
+.trustbox{
+    width: 250px;
+    height: auto;
+    background-color:#1e3737;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 20%;
+    font-size: 26px;
+    position: relative;
+    right: 60px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+/* Project completed */
+
+.pro-card{
+    margin-top: 50px;  
+    width: 250px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.175);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s ease-in;
+}
+.pro-card:hover{
+    border: 1px solid  rgb(255, 129, 50);
+  
+}
+.icon-div{
+    font-size: 50px;
+    background-color: rgb(11, 121, 121);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -70px;
+    border: 20px solid #1e3737;
+    color: white;
+    transition: 0.2s ease-in;
+}
+.div-text{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin-top: 80px;
+ margin-bottom:20px;
+ color: white;
+}
+.div-text h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.div-text h6{
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.406)   ;
+}
+.pro-card:hover .icon-div{
+    background-color:rgb(255, 129, 50) ;   
+}
+
+/* News letter */
+
+.email-input{
+    max-width: 100%;
+    padding: 10px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.519);
+}
+.email-input input{
+    border: none;
+    font-size: 18px;
+}
+.form-check{
+    max-width: 400px;
+    padding: 20px 0px;
+    padding-left: 20px;
+}
+/* Fresh pro cards */
+
+.fresh-projects-cards{
+    width: 300px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 20px;    
+    border-radius: 5px;
+    position: relative;
+   
+ 
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right:0px;
+    transition: linear 0.2s ease;
+    padding: 20px 20px;  
+
+}
+
+.fresh-projects-cards h4{
+    font-size: 19px;
+    margin: 30px 0px;
+}
+
+.text-sec{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 3px;
+}
+.text-sec h6{
+font-size: 13px;
+}
+.img-tesxt button{  
+    margin: 20px 5px;  
+    width: 100px;
+    padding: 5px 16px;
+    height: auto;
+    background-color: rgb(255, 129, 50);
+    font-size: 10px;
+    color: white;
+    border: none;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.img-tesxt h6{
+    font-size: 12 px;
+}
+.img-tesxt i{
+    margin-right: 10px;
+}
+.perc{
+    margin: 20px 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #1e3737;
+}
+@keyframes expand{
+    from{
+        width: 0px;
+    }
+
+
+    to{
+        width: 30px;
+    }
+    to{
+        width: 70%;
+    }
+}
+.perc-bar{
+    width: 70%;
+    height: 100%;
+    background-color: orangered;
+    display: flex;
+    justify-content: end;
+    animation: expand 3s ease-out ;
+    animation-iteration-count: 10
+}
+
+
+
+
+
+
+/* Qrowd is evolving  */
+
+
+.Qrowd{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.649),rgba(0, 0, 0, 0.906)) ,url(Office-Environment-.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.Qrowd p{
+    font-size: 55px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.Qrowd i{
+    
+    font-size: 64px;
+    color: orangered;
+    background: white;
+    width: 100px;
+    height: auto;
+   
+    border-radius: 3px;
+    transition: 1s ease;
+}
+.Qrowd i:hover{
+    color:white;
+    background-color: orangered ;
+    border-radius: 100px;
+}
+
+
+/*2%%%%%%%%% Latest News and Articles %%%%%%%%%%%%*/
+.art-1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+}
+.art-1 p{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(74, 74, 74);
+    padding: 5px 10px;
+}
+.img-news{
+width: 100%;
+height: 300px;
+background: url(woman-in-business-attire-wearing-the-VIVE-Focu.scale-100.png);
+background-position: center;
+background-size: cover;
+position: relative;
+overflow: hidden;
+}
+.img-news-2{
+    width: 100%;
+    height: 300px;
+    background: url(gettyimages-1397487342.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.img-news-3{
+    width: 100%;
+    height: 300px;
+    background: url(creative-graphic-design-agency-hire.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    }
+.overlay-nes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 33px;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.464);
+    position: absolute;
+    transition: 0.6s ease;
+    top: -500px;
+}
+.new-box{
+    width: 70px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    margin: 0 20px 20px 0;
+    background-color: rgb(250, 108, 56);
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+
+}
+.new-box h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.img-news:hover .overlay-nes{
+    top: 0;
+}
+.img-news-2:hover .overlay-nes{
+    top: 0;
+}
+.img-news-3:hover .overlay-nes{
+    top: 0;
+}
+.icon-news{
+    padding: 20px 10px 2px 10px ;
+    display: flex;
+    gap: 10px;
+}
+.icon-news h6{
+    font-size: 13px;
+    color: rgb(74, 74, 74);
+}
+.icon-news i{
+    margin: 0 5px;
+    color: green;
+}
+.readmore{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.readmore h6{
+    font-size: 14px;
+    color: rgb(93, 93, 93);
+}
+
+/*******************  Funds Idea************/
+
+@keyframes box {
+    from{
+        opacity:0; 
+        transform: rotate(0deg); 
+    }
+    to{
+        opacity: 1;
+        width: 5px;
+        height: 25px;
+        
+        transform: rotate(360deg); 
+    }
+    to{
+        opacity: 1;
+        width: 25px;
+        height: 25px;
+        transform: rotate(360deg); 
+    }
+}
+
+.content-funds{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 114, 63);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 70px;
+    
+}
+.smallbox{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    color: black;
+    top: 0;
+    left: 0;
+    animation: box 3s ease;
+    animation-iteration-count: 10;
+    
+}
+.content-funds p{
+    margin-top: 16px;
+    margin-right: auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+}   
+.content-funds i{
+    margin-right: 25px;
+    font-size: 3rem;
+}
+#Bigicon{
+    position: absolute;
+    font-size: 33rem;
+    right:0;
+    color: rgba(255, 255, 255, 0.057);
+}
+.content-funds button{
+    background-color: rgb(58, 58, 58);
+    padding: 15px 30px;
+    border: none;
+    color: white;
+}
+.content-funds span{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.519);
+}
+
+
+/*****Footer********* */
+.footer-0{
+    color: white;
+}
+.footer-1{
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-0 img{
+    
+    margin: 5px 0px  15px 0px ;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: auto;
+    background-color: white;
+}
+.footer-0 p{
+    margin: 25px 0;
+}
+.footeremail{
+    max-width: 300px;
+    background: white;
+    border-radius: 5px;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footeremail input{
+    background: none;
+    border: none;
+}
+.footeremail i{
+    color: black;
+}
+.footer-1 a{
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    margin: 5px 0px;
+    transition: 1s ease;
+}
+.footer-1 a:hover{
+    letter-spacing: 1px;
+}
+.footer-1 h6{
+    margin-bottom: 50px;
+}
+.social-links{
+    margin-top: 20px;
+    max-width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    
+}
+.social-links i{
+    transition: 0.2s ease;
+}
+.social-links i:hover{
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 5px;
+    color: rgb(146, 146, 146);
+}

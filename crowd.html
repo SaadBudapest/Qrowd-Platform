@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="crowdstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- headertop -->
+    <div class="headerone">
+        <div class="contact">
+            <a href=""><i class="bi bi-geo-alt"></i> 30 Commercial road fratton, Australia</a>
+            <a href=""> <i class="bi bi-envelope"></i> needhelp@company.com</a>
+        </div>
+        <div class="logindetails">
+            <a href="#"><i class="bi bi-person-circle"></i> Login/Register</a>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-pinterest"></i>
+
+        </div>
+    </div>
+
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <!-- logo -->
+        <div class="container-fluid logodiv">
+            <a class="navbar-brand ms-3 logodiv " href="#"><img src="logo/logo-1.png" alt="" style="width: 110px;"></a>
+            <!-- button -->
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Off canvas -->
+            <div class="offcanvas offcanvas-start" tabindex="1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="Crowd Funding/logo/logo-1.png"
+                            alt="" style="width: 110px;"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column align-center justify-center flex-lg-row">
+                    <!-- Nav  -->
+                    <ul class="navbar-nav  flex-grow-1 Navibar">
+                        <li class="nav-item px-3 fw-bold">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="#">Explore</a>
+                        </li>
+                        <li class="nav-itempx-3">
+                            <a class="nav-link" aria-current="page" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="#">News </a>
+                        </li>
+                    </ul>
+                    <!-- Search and button -->
+                    <ul class="navbar-nav ">
+                        <button type="button" class="btn btn btn-sm mx-2 "
+                            style=" padding: 0 30px; border: 1px solid rgb(8, 0, 255);">Login</button>
+                        <button type="button" class="btn btn btn-sm mx-2"
+                            style="background-color: rgb(0, 123, 255); color: white; padding: 0 30px;">SignUp</button>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- hero section -->
+    <div id="carouselExampleInterval" class="carousel carousel-dark slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active c-active" data-bs-interval="5000"
+                style="background-image: url(hero/45f6cfe38aaf8cd21b8360c711c8f427ebd45449.webp); background-position: center; background-size: cover; height: 500px;">
+                <div class="divoverlay"></div>
+
+                <div class="carousel-caption img-caps d-md-block">
+                    <h6>Raising money is easy now!</h6>
+                    <h1 style="font-size: 45px;">Ultimate <br> Crowdfunding <br> Platforms </h1>
+
+                    <button type="button " class="btn btn-primary btn-left "
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Start Project
+                    </button>
+                    <button type="button " class="btn btn-primary btn-right"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Speak with An Expert
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item c-active" data-bs-interval="7000"
+                style="background-image: url(hero/business-people-working-in-the-office-scaled.jpg); background-position: center; background-size: cover;  height: 500px;">
+                <div class="divoverlay"></div>
+                <div class="carousel-caption img-caps d-md-block">
+                    <h6>Raising money is easy now!</h6>
+                    <h1 style="font-size: 45px;">Ultimate <br> Crowdfunding <br> Platforms </h1>
+
+                    <button type="button " class="btn btn-primary btn-left "
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Start Project
+                    </button>
+                    <button type="button " class="btn btn-primary btn-right"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Speak with An Expert
+                    </button>
+                </div>
+
+            </div>
+            <div class="carousel-item c-active" data-bs-interval="000"
+                style="background-image: url(hero/Benefits-of-moving-to-a-smaller-workplace-Condeco.jpg); background-position: center; background-size: cover; height: 500px;">
+                <div class="divoverlay"></div>
+                <div class="carousel-caption img-caps d-md-block">
+                    <h6>Raising money is easy now!</h6>
+                    <h1 style="font-size: 45px;">Ultimate <br> Crowdfunding <br> Platforms </h1>
+
+                    <button type="button " class="btn btn-primary btn-left "
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Start Project
+                    </button>
+                    <button type="button " class="btn btn-primary btn-right"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Speak with An Expert
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Category Container -->
+    <div class="container-fluid" style=" background-color: rgb(0, 120, 131);height: auto;">
+        <div class="row justify-content-center text-center py-5 ">
+            <div class="col-lg-6">
+                <h6 class="px-5" style="color: white; font-weight: 500; font-size: 13px;">Explore categories</h6>
+                <p class="fs-1 text-white px-5" style="font-weight: 700;">Check Which Category <br> Intrest You.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center gap-3 py-3">
+            <div class="col-lg-1 card1">
+
+                <i class="bi bi-phone icon"></i>
+                <h5>Technology</h5>
+
+            </div>
+            <div class="col-lg-1 card1">
+
+                <i class="bi bi-buildings icon"></i>
+                <h5>Fashion</h5>
+
+            </div>
+            <div class="col-lg-1 card1">
+
+                <i class="bi bi-collection-play-fill icon"></i>
+                <h5>Multi-Media</h5>
+
+            </div>
+            <div class="col-lg-1 card1">
+
+                <i class="bi bi-journal-richtext icon"></i>
+                <h5>Education</h5>
+
+
+            </div>
+            <div class="col-lg-1 card1">
+
+                <i class="bi bi-cloud-lightning-rain icon"></i>
+                <h5>Cloud Service</h5>
+
+
+            </div>
+            <div class="col-lg-1 card1">
+                <i class="bi bi-clipboard2-pulse icon"></i>
+                <h5>Medical Service</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center gap-3 py-3">
+            <div class="col-lg-6">
+                <p style=" font-size: 12px;  color: rgb(105, 210, 233);">Discover projects just for you and get great
+                    recommendations when you <span
+                        style="color: white; text-decoration: underline rgb(255, 208, 0);">select your interests.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Feature Projects -->
+    <div class="container my-3">
+        <div class="row text-center">
+            <h6 class="mt-3" style="color:  rgb(255, 129, 50); font-size: 14px; font-weight: 400;">Businesses You Can Back</h6>
+            <h1 style="font-weight: 700; font-size: 40px;">Explore the Best Featured <br>
+                Projects now </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide py-3">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner mb-5 mt-2">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center my-2 gap-3">
+                                <div class="col-md-3 ">
+                                    <div class="single-box">
+                                        <div class="img-area"><img src="feature projects/project-1-1.jpg" alt=""></div>
+                                        <div class="img-txt">
+                                            <button>Technology</button>
+                                            <h5>AudioPhile-First Smart <br>Wireless Headphones</h5>
+                                            <h6><i class="bi bi-clock"></i>275 Days Remaining</h6>
+                                        </div>
+                                        <div class="img-progress">
+                                           
+                                               <h6>Raised</h6>
+                                                <div class="pbar">
+                                                    <div class="perc"></div>
+                                                </div></li>
+                                                
+                                              <h6>70%</h6>
+                                          
+                                        </div>
+                                        <div class="img-goals">
+                                            <p>Acheived:$3,9000</p>
+                                            <p>Goal:$3,5000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-box">
+                                        <div class="img-area"> 
+                                            <img src="feature projects/project-1-2.jpg" alt=""> 
+                                        </div>
+                                        <div class="img-txt">
+                                            <button>Education</button>
+                                            <h5>Bourne-Travel Breifcase<br>and Padfolio</h5>
+                                            <h6><i class="bi bi-clock"></i>275 Days Remaining</h6>
+                                        </div>
+                                        <div class="img-progress">
+                                           
+                                            <h6>Raised</h6>
+                                             <div class="pbar">
+                                                 <div class="perc"></div>
+                                             </div></li>
+                                             
+                                           <h6>80%</h6>
+                                       
+                                     </div>
+                                        <div class="img-goals">
+                                            <p>Acheived:$3,9000</p>
+                                            <p>Goal:$3,5000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-box">
+                                        <div class="img-area"><img src="feature projects/project-1-3.jpg" alt=""></div>
+                                        <div class="img-txt">
+                                            <button>Design</button>
+                                            <h5>OfficeX-Luxury Seating<br>for your office</h5>
+                                            <h6><i class="bi bi-clock"></i>275 Days Remaining</h6>
+                                        </div>
+                                        <div class="img-progress">
+                                           
+                                            <h6>Raised</h6>
+                                             <div class="pbar">
+                                                 <div class="perc"></div>
+                                             </div></li>
+                                             
+                                           <h6>90%</h6>
+                                       
+                                     </div>
+                                        <div class="img-goals">
+                                            <p>Acheived:$3,9000</p>
+                                            <p>Goal:$3,5000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Qrowd Platform  -->
+    <div class="container-fluid ">
+        <div class="row" >
+            <div class="col-lg-7 platform1 mb-5 pt-5" >
+                <div class="text-1">
+                    <h6>OUR PLATFORM BENEFITS</h6>
+                    <h2>Why you Should Choose <br>
+                        Qrowd Platform</h2>
+                </div>
+                <div class="text-2">
+                    <p>There are certain attributes of a profession and one has to 
+                        catch hold of them <br> in order to work efficiently and grow in that business. 
+                        I share my experience as <br> an interior designer, 
+                        a profession of great esthetic.</p>
+                </div>
+                <div class="text-3">
+                    <div class="success">
+                        <i class="bi bi-check-circle"></i>
+                        <ul>
+                            <li>100% Success Rates</li>
+                            <li>Lorem ipsum velit anod <br> ips aliquet enean quis.</li>
+                        </ul>
+                    </div>
+                    <div class="success">
+                        <i class="bi bi-check-circle"></i>
+                        <ul>
+                            <li>Millions in Funding</li>
+                            <li>Lorem ipsum velit anod ips <br> aliquet enean quis.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-platform">
+                    <button>Make it happen</button>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5" style="background-color:#1e3737;">
+                <div class="row">
+                    <div class="col-10 q-columnm" style="background-image: url(why-choose-1.1.jpg); ; height: 800px; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: end;">
+                    <div class="trustbox">
+                        <p>Trusted by more <br> than <span style="color: rgb(255, 129, 50);">3500</span> <br> clients.</p>
+                    </div>
+                    </div>
+                    <div class="col-1" style="display: flex; align-items: end;">
+                        <div class="rectanle" style="background-color: rgb(40, 171, 127); width: 10px; height: 40%;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Project completed -->
+    <div class="container-fluid">
+        <div class="row py-5 justify-content-center align-items-center gap-4" style="background-color:#1e3737; height: auto; padding: 35px 10px; " >
+            <div class="col-lg-2 pro-card">
+                <div class="icon-div">
+                    <i class="bi bi-clipboard-data"></i>
+                </div>
+                <div class="div-text">
+                    <h1>790</h1> 
+                    <h6> Projects Completed</h6>
+                </div>
+                
+            </div>
+            <div class="col-lg-2 pro-card ">
+                <div class="icon-div">
+                    <i class="bi bi-people"></i>
+                </div>
+                <div class="div-text">
+                    <h1>260</h1> 
+                    <h6> Partner Funding</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 pro-card ">
+                <div class="icon-div">
+                    <i class="bi bi-database-exclamation"></i>
+                </div>
+                <div class="div-text">
+                    <h1>86k</h1> 
+                    <h6>Raised to date</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 pro-card ">
+                <div class="icon-div">
+                    <i class="bi bi-globe2"></i>
+            </div>
+            <div class="div-text">
+                <h1>940</h1> 
+                <h6>Happy customers.</h6>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- News Letter -->
+    <div class="container-fluid">
+        <div class="row my-5 gap-5 justify-content-center">
+            <div class="col-lg-5 my-5 ">
+                <h6 style=" font-size: 13px;   color: rgb(255, 129, 50);">SUBSCRIBE TO NEWSLETTER</h6>
+                <h1 style=" font-weight: 620; font-size: 49px; color: rgb(13, 13, 49);">Get our Complete <br> Crowdfunding Guides</h1>
+            </div>
+            <div class="col-lg-5 my-5 ">
+                <div class="email-input">
+                    <input type="email" placeholder="enter your email"> 
+                    <i class="bi bi-telegram"></i>
+                </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        I agree to all terms and policies of the company
+                    </label>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- Fresh Projects -->
+    <div class="container">
+        <div class="row my-5 justify-content-center text-center">
+            <h6 style=" margin-top: 45px; font-size: 14px; color: rgb(255, 129, 50);">BUSINESSES YOU CAN BACK</h6>
+            <h1 style=" margin-top: 10px; font-weight: 620; font-size: 50px; color: rgb(13, 13, 49);">Recommended for you <br>
+                Fresh Projects</h1>
+        </div>
+    </div>
+
+
+
+
+<!-- Cards -->
+<div class="container-fluid">
+    <div class="row justify-content-center gap-3">
+       
+</div>
+<div class="col-md-12">
+    <div id="carouselExampleIndicators" class="carousel slide py-3">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            class="two" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner mb-5 mt-2">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 text-white">
+                        <div class="fresh-projects-cards" style="background: linear-gradient(rgba(0, 0, 0, 0.289),rgba(0, 0, 0, 0.66)) ,url(1-5-4.jpg);">      
+                            <div class="content">
+                                <div class="img-tesxt">
+                                    <button>AI Service</button>
+                                    <h6><i class="bi bi-clock"></i>20 Days Remaining</h6>
+                                </div>
+                                <h4>OfficeX-Luxury Seating For your Office</h4>
+                                <div class="perc">
+                                    <div class="perc-bar">
+                                       <h6 style="font-size: 14px; padding: 5px 0; ">70%</h6> 
+                                    </div>
+                                </div>
+                               <div class="text-sec">
+                                <div class="goals-rates">
+                                    <h6>$3,5000</h6>
+                                   <h6>Goals of $55,000</h6>
+                                </div>
+                                <div class="backers">
+                                    <h6>12+</h6>
+                                    <h6>Backers We Got</h6>
+                                </div>
+                               </div>
+                            </div>
+                          
+                           
+                        </div>  
+                    </div> 
+                    <div class="col-md-3 text-white"style="w height: auto;">
+                     
+                        <div class="fresh-projects-cards" style="background-image: linear-gradient(rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.66)) ,url(graphic-design.jpg);">
+                            <div class="img-tesxt">
+                                <button>Education</button>
+                                <h6><i class="bi bi-clock"></i>20 Days Remaining</h6>
+                            </div>
+                            <h4>OfficeX-Luxury Seating For your Office</h4>
+                            <div class="perc">
+                                <div class="perc-bar">
+                                   <h6 style="font-size: 14px; padding: 5px 0; ">70%</h6> 
+                                </div>
+                            </div>
+                            <div class="text-sec">
+                                <div class="goals-rates">
+                                    <h6>$3,5000</h6>
+                                   <h6>Goals of $55,000</h6>
+                                </div>
+                                <div class="backers">
+                                    <h6>12+</h6>
+                                    <h6>Backers We Got</h6>
+                                </div>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-white"style="w height: auto;">
+                     
+                        <div class="fresh-projects-cards" style="background-image: linear-gradient(rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.66)) ,url(modernTechnology_620977929_400-1.jpg);"  >
+                            <div class="img-tesxt">
+                                <button>Technology</button>
+                                <h6><i class="bi bi-clock"></i>20 Days Remaining</h6>
+                            </div>
+                            <h4>OfficeX-Luxury Seating For your Office</h4>
+                            <div class="perc">
+                                <div class="perc-bar">
+                                   <h6 style="font-size: 14px; padding: 5px 0; ">70%</h6> 
+                                </div>
+                            </div>
+                            <div class="text-sec">
+                                <div class="goals-rates">
+                                    <h6>$3,5000</h6>
+                                   <h6>Goals of $55,000</h6>
+                                </div>
+                                <div class="backers">
+                                    <h6>12+</h6>
+                                    <h6>Backers We Got</h6>
+                                </div>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-white "style="w height: auto;">
+                       
+                        <div class="fresh-projects-cards" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url(why-design-thinking-is-important-in-todays-job-industries-132433-16x9.webp);" >
+                            <div class="img-tesxt">
+                                <button>Design</button>
+                                <h6><i class="bi bi-clock"></i>20 Days Remaining</h6>
+                            </div>
+                            <h4>OfficeX-Luxury Seating For your Office</h4>
+                            <div class="perc">
+                                <div class="perc-bar">
+                                   <h6 style="font-size: 14px; padding: 5px 0; ">70%</h6> 
+                                </div>
+                            </div>
+                            <div class="text-sec">
+                                <div class="goals-rates">
+                                    <h6>$3,5000</h6>
+                                   <h6>Goals of $55,000</h6>
+                                </div>
+                                <div class="backers">
+                                    <h6>12+</h6>
+                                    <h6>Backers We Got</h6>
+                                </div>
+                               </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Qrowd is evolving  -->
+
+<div class="container-fluid">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-12 Qrowd">
+               
+                    <i class="bi bi-play-fill"></i>
+            
+                <p>Qrowd is evolving the way <br>
+                    individuals works</p>
+         
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Reviews Directly from the Qrowd -->
+
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="testimonial-one-main-content-img-1.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="headings">
+                    <h6>OUR TESTIMONIALS</h6>
+                    <h1>Reviews Directly from <br> the Qrowd</h1>
+                </div>
+              <div class="testimonial mySwiper">
+                <div class="test-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <p>"Working with [Digital Agency Name] has been a game-changer for our business. Their team not only redesigned our website to be more user-friendly and visually appealing but also boosted our online presence through effective SEO strategies. Our traffic has doubled, and we’ve seen a significant increase in leads and sales. Their expertise and 
+                        dedication are unmatched. We couldn’t be happier with the results!"</p>
+
+                        <div class="review">
+                            <img src="testimonial-one-client-img-2.jpg" alt="">
+                            <p>Sarah Albert <br> CO Founder</p>
+                            <i class="bi bi-quote"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+             
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!-- Latest News and Articles -->
+    <div class="container">
+        <div class="row my-5 text-center">
+            <h6>DIRECT FROM THE BLOG POSTS</h6>
+            <h1>Checkout Latest News <br>
+                and Articles</h3>
+        </div>
+    </div>
+
+      <!-- Latest News cards -->      
+<div class="container-fluid">
+    <div class="row my-5 justify-content-center">
+        <div class="col-lg-3 art-1">
+            
+            <div class="img-news">
+                <div class="overlay-nes">
+                    +
+                </div>
+                <div class="new-box">
+                    <h4> 28 <br> July</h4>
+                </div>
+            </div>
+            <div class="icon-news">
+                <h6> <i class="bi bi-person-circle"></i> By Admin</h6>
+                <h6> <i class="bi bi-chat-dots"></i> 02 Comments</h6>
+            </div>
+            <p>Money markets rates finding the best accounts</p>
+            <div class="readmore">
+                <h6> Read more</h6>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 art-1">   
+            <div class="img-news-2">
+                <div class="overlay-nes">
+                    +
+                </div>
+                <div class="new-box">
+                    <h4> 28 <br> July</h4>
+                </div>
+            </div>
+            <div class="icon-news">
+                <h6> <i class="bi bi-person-circle"></i> By Admin</h6>
+                <h6> <i class="bi bi-chat-dots"></i> 02 Comments</h6>
+            </div>
+            <p>Money markets rates finding the best accounts</p>
+            <div class="readmore">
+                <h6> Read more</h6>
+                <i class="bi bi-arrow-right"></i>
+            </div>     
+        </div>
+        <div class="col-lg-3 art-1">
+            <div class="img-news-3">
+                <div class="overlay-nes">
+                    +
+                </div>
+                <div class="new-box">
+                    <h4> 28 <br> July</h4>
+                </div>
+                
+            </div>
+            <div class="icon-news">
+                <h6> <i class="bi bi-person-circle"></i> By Admin</h6>
+                <h6> <i class="bi bi-chat-dots"></i> 02 Comments</h6>
+            </div>
+            <p>Money markets rates finding the best accounts</p>
+            <div class="readmore">
+                <h6> Read more</h6>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+        </div>      
+</div>
+
+
+
+<!-- ******************** Funds Idea *****************-->
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="content-funds">
+                <i class="bi bi-coin" id="Bigicon"></i> 
+                <div class="smallbox">.</div>
+                <i class="bi bi-coin"></i>
+                <p> <span>Your story starts from here</span> <br>
+                    Ready to raise funds for idea?</p>
+                <button>Make it happen</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ******************** Footer *****************-->
+<div class="container-fluid">
+    <div class="row justify-content-around" style="background-color:#1e3737;">
+        <div class="col-md-3 py-5  footer-0">
+            <img src="logo/logo-1.png" alt="logo">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, iste. 
+                Reprehenderit pariatur quaerat suscipit 
+                repellendus eum, cum perferendis non eius.</p>
+            <div class="footeremail">
+                <input type="email" name="email" id="" placeholder="enter your email">
+                <i class="bi bi-telegram"></i>
+            </div>    
+        </div>
+        <div class="col-md-2 py-5 footer-1">
+            <h6>Explore</h6>
+            <a href="#">About</a>
+            <a href="#">How it works</a>
+            <a href="#">Knowledge Hub</a>
+            <a href="#">Success Stories</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="col-md-2 py-5 footer-1">
+            <h6>Fundraising</h6>
+            <a href="#">Design</a>
+            <a href="#">Education</a>
+            <a href="#">Technology</a>
+            <a href="#">Games</a>
+            <a href="#">Films&Videos</a>
+        </div>
+        <div class="col-md-3 py-5 footer-1">
+            <h6>Contact</h6>
+            <a href="#"><i class="bi bi-telephone"></i> Call</a>
+            <a href="#"><i class="bi bi-chat-left-text"></i> Message</a>
+            <a href="#"><i class="bi bi-geo-alt"></i> Address</a>
+            <div class="social-links">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-pinterest"></i>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Last******** -->
+<div class="container-fluid">
+    <div class="row text-white text-center py-4" style=" border-top: 1px solid rgb(131, 131, 131); background-color:#172424;">
+        <h5 style="font-size: 15px; color: rgb(169, 169, 169);">© Copyright 2022 by Qrowd.com</h5>
+    </div>
+</div>
+
+</body>
+
+</html>
